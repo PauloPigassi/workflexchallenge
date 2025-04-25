@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 export interface Workation {
   id: string;
@@ -18,11 +19,11 @@ export interface Workation {
 })
 export class WorkationService {
 
-  private apiUrl = 'http://localhost:8080/workflex/workation';
+  private readonly apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
   getWorkations(): Observable<Workation[]> {
-    return this.http.get<Workation[]>(this.apiUrl);
+    return this.http.get<Workation[]>(this.apiUrl+"/workflex/workation");
   }
 }
