@@ -58,9 +58,9 @@ Frontend Application (Angular): http://localhost:4200
 bash
 Copy
 Edit
-/project-root
+/workflexchallenge
   /backend    → Spring Boot project (Java)
-/frontend     → Angular project (TypeScript)
+  /frontend     → Angular project (TypeScript)
 docker-compose.yml
 🛠 Environment Details
 PostgreSQL
