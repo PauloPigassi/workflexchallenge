@@ -1,6 +1,6 @@
 package com.example.workflex.service;
 
-import com.example.workflex.model.Workation;
+import com.example.workflex.model.entities.Workation;
 import com.example.workflex.repository.WorkationRepository;
 import com.example.workflex.service.impl.WorkationServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,7 +11,6 @@ import org.mockito.MockitoAnnotations;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;

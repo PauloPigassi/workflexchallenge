@@ -1,6 +1,6 @@
 package com.example.workflex.integration;
 
-import com.example.workflex.model.Workation;
+import com.example.workflex.model.entities.Workation;
 import com.example.workflex.repository.WorkationRepository;
 import com.example.workflex.service.impl.WorkationServiceImpl;
 import org.junit.jupiter.api.Test;

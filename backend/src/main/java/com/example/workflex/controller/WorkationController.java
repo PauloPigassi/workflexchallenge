@@ -1,6 +1,6 @@
 package com.example.workflex.controller;
 
-import com.example.workflex.model.Workation;
+import com.example.workflex.model.entities.Workation;
 import com.example.workflex.service.impl.WorkationServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

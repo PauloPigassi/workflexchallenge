@@ -1,7 +1,7 @@
 package com.example.workflex.service.impl;
 
 
-import com.example.workflex.model.Workation;
+import com.example.workflex.model.entities.Workation;
 import com.example.workflex.repository.WorkationRepository;
 import com.example.workflex.service.WorkationService;
 import com.opencsv.CSVReader;

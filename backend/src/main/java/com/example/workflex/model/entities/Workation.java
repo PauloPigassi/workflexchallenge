@@ -1,4 +1,4 @@
-package com.example.workflex.model;
+package com.example.workflex.model.entities;
 
 
 import jakarta.persistence.*;
