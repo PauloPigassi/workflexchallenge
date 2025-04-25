@@ -44,11 +44,11 @@ export class WorkationListComponent implements OnInit {
 
   getFormattedRisk(risk: string): { text: string, icon: string } {
     switch (risk) {
-      case 'LOW_RISK':
-        return { text: 'No risk', icon: 'assets/icons/yellow-risk.svg' };
-      case 'NO_RISK':
-        return { text: 'No risk', icon: 'assets/icons/yellow-risk.svg' };
-      case 'HIGH_RISK':
+      case 'LOW':
+        return { text: 'Low risk', icon: 'assets/icons/yellow-risk.svg' };
+      case 'NO':
+        return { text: 'No risk', icon: 'assets/icons/green-risk.svg' };
+      case 'HIGH':
         return { text: 'High risk', icon: 'assets/icons/red-risk.svg' };
       default:
         return { text: risk, icon: '' };

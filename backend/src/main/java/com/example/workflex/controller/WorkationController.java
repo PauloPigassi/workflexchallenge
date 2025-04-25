@@ -17,9 +17,9 @@ public class WorkationController {
     @Autowired
     private WorkationServiceImpl workationServiceImpl;
 
-
     @GetMapping("/workation")
     public List<Workation> getWorkations() {
+
         if (workationServiceImpl.count() == 0) { // Will call just the first time
             workationServiceImpl.importCSV(); // call CSV import
         }
