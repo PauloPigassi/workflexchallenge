@@ -1,0 +1,5 @@
+com/example/workflex/WorkflexApplicationTests.class
+com/example/workflex/service/WorkationServiceTest.class
+com/example/workflex/controller/WorkationControllerTest.class
+com/example/workflex/integration/WorkationServiceIntegrationTest.class
+com/example/workflex/service/WorkationServiceTest$1.class

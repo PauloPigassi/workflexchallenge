@@ -1,0 +1,7 @@
+com/example/workflex/service/WorkationService.class
+com/example/workflex/controller/WorkationController.class
+com/example/workflex/service/impl/WorkationServiceImpl.class
+com/example/workflex/repository/WorkationRepository.class
+com/example/workflex/WorkflexApplication.class
+com/example/workflex/model/Workation.class
+com/example/workflex/model/Workation$WorkationBuilder.class

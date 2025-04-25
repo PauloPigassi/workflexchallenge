@@ -1,0 +1,6 @@
+/Users/paulopigassi/Documents/workflexchallenge/backend/src/main/java/com/example/workflex/WorkflexApplication.java
+/Users/paulopigassi/Documents/workflexchallenge/backend/src/main/java/com/example/workflex/controller/WorkationController.java
+/Users/paulopigassi/Documents/workflexchallenge/backend/src/main/java/com/example/workflex/model/Workation.java
+/Users/paulopigassi/Documents/workflexchallenge/backend/src/main/java/com/example/workflex/repository/WorkationRepository.java
+/Users/paulopigassi/Documents/workflexchallenge/backend/src/main/java/com/example/workflex/service/WorkationService.java
+/Users/paulopigassi/Documents/workflexchallenge/backend/src/main/java/com/example/workflex/service/impl/WorkationServiceImpl.java
