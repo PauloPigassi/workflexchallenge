@@ -1,0 +1,75 @@
+<!-- No index.html -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+<table class="workation-table">
+    <thead>
+      <tr>
+        <th (click)="sort('employee')">
+            Employee
+            <span *ngIf="sortedColumn === 'employee'">
+              {{ sortDirection === 'asc' ? '▲' : '▼' }}
+            </span>
+            <span *ngIf="sortedColumn !== 'employee'">▲▼</span>
+        </th>
+        <th (click)="sort('origin')">
+            Origin
+            <span *ngIf="sortedColumn === 'origin'">
+              {{ sortDirection === 'asc' ? '▲' : '▼' }}
+            </span>
+            <span *ngIf="sortedColumn !== 'origin'">▲▼</span>
+        </th>
+        <th (click)="sort('destination')">
+            Destination
+            <span *ngIf="sortedColumn === 'destination'">
+              {{ sortDirection === 'asc' ? '▲' : '▼' }}
+            </span>
+            <span *ngIf="sortedColumn !== 'destination'">▲▼</span>
+        </th>
+        <th (click)="sort('startDate')">
+            Start
+            <span *ngIf="sortedColumn === 'startDate'">
+              {{ sortDirection === 'asc' ? '▲' : '▼' }}
+            </span>
+            <span *ngIf="sortedColumn !== 'startDate'">▲▼</span>            
+        </th>  
+        <th (click)="sort('endDate')">
+            End
+            <span *ngIf="sortedColumn === 'endDate'">
+              {{ sortDirection === 'asc' ? '▲' : '▼' }}
+            </span>
+            <span *ngIf="sortedColumn !== 'endDate'">▲▼</span>            
+        </th>  
+        <th (click)="sort('workingDays')">
+            Working Days
+            <span *ngIf="sortedColumn === 'workingDays'">
+              {{ sortDirection === 'asc' ? '▲' : '▼' }}
+            </span>
+            <span *ngIf="sortedColumn !== 'workingDays'">▲▼</span>            
+        </th> 
+
+        <th (click)="sort('risk')">
+            Risk
+            <span *ngIf="sortedColumn === 'risk'">
+              {{ sortDirection === 'asc' ? '▲' : '▼' }}
+            </span>
+            <span *ngIf="sortedColumn !== 'risk'">▲▼</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let w of workations">
+        <td>{{ w.employee }}</td>
+        <td>{{ getFlag(w.origin) }} {{ w.origin }}</td>
+        <td>{{ getFlag(w.destination) }} {{ w.destination }}</td>      
+        <td>{{ w.startDate | date: 'dd/MM/yyyy' }}</td>
+        <td>{{ w.endDate | date: 'dd/MM/yyyy' }}</td>        
+        <td class="centered">{{ w.workingDays }}</td>
+        <td class="risk-cell">
+            <img [attr.src]="getFormattedRisk(w.risk).icon" class="risk-icon" alt="Risk icon" />
+            {{ getFormattedRisk(w.risk).text }}
+        </td>              
+      </tr>
+    </tbody>
+  </table>
+  

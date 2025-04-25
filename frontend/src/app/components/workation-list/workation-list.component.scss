@@ -1,0 +1,52 @@
+.workation-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #2e3a59;
+
+  thead {
+    background-color: #f5f8fa;
+
+    th {
+      padding: 12px;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      border-bottom: 1px solid #dbe2ea;
+      user-select: none;
+    }
+  }
+
+  tbody {
+    tr {
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #f0f9ff;
+      }
+
+      &:nth-child(even) {
+        background-color: #fcfdff;
+      }
+
+      td {
+        padding: 12px;
+        vertical-align: middle;
+        border-bottom: 1px solid #edf1f5;
+      }
+    }
+  }
+}
+
+.risk-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  img.risk-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
